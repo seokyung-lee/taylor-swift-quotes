@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from Taylor Swift</title>
+    <style>
+        /* Google Fonts 로드 */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Shizuru&display=swap');
+
+        /* 전체 배경 */
+        body {
+            background: #FCF6F5; /* 배경 색상 */
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif; /* 현대적이고 세련된 폰트 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #7b9acc; /* 텍스트 색상 */
+        }
+
+        /* 전체 컨테이너 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        /* 타이틀 */
+        h1 {
+            font-family: 'Shizuru', cursive; /* Shizuru 폰트 */
+            font-size: 3rem; /* 타이틀 더 크고 돋보이게 */
+            margin-bottom: 20px; /* 간격 좁힘 */
+            color: #7b9acc; /* 타이틀 색상 */
+        }
+
+        /* 스티커 메모 */
+        .quote-box {
+            width: 100%;
+            padding: 30px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background: #7b9acc; /* 스티커 메모 배경색 */
+            color: #FCF6F5; /* 메모 텍스트 색상 */
+        }
+
+        /* 영어 명언 */
+        #quote-en {
+            font-size: 1.1rem; /* 줄이기 */
+            font-weight: 600; /* 굵기 설정 */
+            line-height: 1.4; /* 줄 간격 */
+            margin: 0;
+            white-space: pre-line; /* 줄바꿈 적용 */
+        }
+
+        /* 한국어 명언 */
+        #quote-ko {
+            font-size: 0.9rem; /* 더 작게 */
+            color: #FCF6F5; /* 국문 명언 색상: 흰색 */
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* 출처 */
+        #source {
+            font-size: 0.8rem; /* 가장 작은 폰트 */
+            color: #ddd;
+            margin-top: 15px;
+        }
+
+        /* 조언 생성 버튼 */
+        button {
+            background: #7b9acc;
+            color: #FCF6F5;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: #6a86b8; /* 살짝 어두운 톤 */
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>from Taylor Swift</h1>
+        <!-- 명언이 표시될 스티커 메모 -->
+        <div id="quote-box" class="quote-box">
+            <p id="quote-en">2025년 잘 살아내고 싶은가요?
+                             다정한 고나리와 함께 한 해 시작하세요! 💗</p>
+            <p id="quote-ko"></p>
+            <p id="source"></p>
+        </div>
+        <!-- 조언 생성 버튼 -->
+        <button id="generate">고나리 듣기</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
